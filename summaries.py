@@ -1,7 +1,7 @@
 import streamlit as st
 
 st.title("Biennial Update Reports")
-st.selectbox("Select a pair of documents", ["Thailand BUR4 vs. Malaysia BU2", "Malaysia BUR2 vs. Malaysia BUR3"])
+pair = st.selectbox("Select a pair of documents", ["Thailand BUR4 vs. Malaysia BU2", "Malaysia BUR2 vs. Malaysia BUR3"])
 st.header("Generated Summaries")
 ex = st.expander("Prompt")
 ex.write('''Provide a detailed summary of the following text [in paragraph form].
@@ -9,38 +9,27 @@ ex.write('''Provide a detailed summary of the following text [in paragraph form]
           be relevant for a reader to fully comprehend and understand its material.''')
 
 col1, col2 = st.columns(2)
-col1.subheader("Thailand BUR4")
-col2.subheader("Malaysia BU2")
-col1.write('''Chapter 3 of Thailand’s Fourth Biennial Update Report provides a comprehensive overview of the country’s climate change mitigation efforts, emphasizing the integration of mitigation strategies into national and sectoral policies. The chapter focuses on the implementation of various frameworks and targets aimed at reducing greenhouse gas (GHG) emissions. Thailand’s commitment to addressing climate change is underscored by its Nationally Appropriate Mitigation Action (NAMA) and Nationally Determined Contribution (NDC) targets.
 
-Key national plans include the 20-Year National Strategy, the Climate Change Master Plan (2015–2050), and sectoral strategies covering energy, transportation, industry, and waste management. The 20-Year National Strategy aims to achieve eco-friendly development, balancing economic, environmental, and social factors. It integrates climate action into sustainable development goals, recognizing the increasing impacts of climate change on the environment and society.
 
-The NAMA, implemented between 2013 and 2020, achieved significant GHG reductions, especially in the energy and transport sectors. By 2020, Thailand had reduced emissions by 15.4% from the business-as-usual scenario, with renewable energy contributing the bulk of the reductions. The transition to the NDC framework represents Thailand’s second phase of climate action, targeting a 20-25% reduction by 2030, with a more ambitious long-term goal of achieving carbon neutrality by 2050 and net-zero emissions by 2065.
 
-Thailand’s mitigation measures are diverse, spanning renewable energy promotion, energy efficiency improvements, waste management, and agricultural reforms. The report highlights the importance of technology transfer, capacity building, and international cooperation in enabling Thailand to meet its climate goals. Specific projects, such as the RAC NAMA (Refrigeration and Air Conditioning Nationally Appropriate Mitigation Action) and Thai Rice NAMA, exemplify targeted initiatives that combine policy, technology, and financial mechanisms to achieve emission reductions in key sectors.
-
-Overall, the report illustrates Thailand’s proactive stance in climate mitigation, noting the challenges posed by limited financial and technical resources. It emphasizes the need for ongoing international support to reach the more ambitious targets outlined in the updated NDC and the Long-Term Low Greenhouse Gas Emission Development Strategy (LT-LEDS).''')
-
-col2.write('''Chapter 3 of Malaysia’s Biennial Update Report highlights the country’s ongoing mitigation efforts to address climate change. The chapter begins by discussing how Malaysia has mainstreamed climate mitigation actions into its national development plans, particularly through the Eleventh Malaysia Plan (2016-2020), which emphasizes green growth and sustainability. It outlines key strategies aimed at climate-resilient development, resource efficiency, and sustainable energy usage.
-
-The National Policy on Climate Change provides a framework guiding government agencies, industries, and communities toward a balanced approach to both mitigation and adaptation. This framework is based on five principles, including sustainable development, environmental conservation, and coordinated implementation of climate change actions. Additionally, the country has committed to reducing greenhouse gas (GHG) emissions intensity per GDP by 45% by 2030, based on 2005 levels.
-
-Sectoral policies play a significant role in Malaysia’s mitigation strategy, covering energy, transport, waste management, and land-use sectors. For example, the National Renewable Energy Policy and Action Plan and the National Energy Efficiency Action Plan (NEEAP) set ambitious targets for renewable energy installation and energy efficiency improvements. In the transport sector, policies such as the National Automotive Policy and the National Electric Mobility Blueprint promote the use of electric vehicles (EVs) and biofuels, while aiming for a 40% modal share of public transport by 2030.
-
-Waste management efforts are also prominent, with goals to increase recycling rates and reduce methane emissions from waste disposal sites. The chapter details Malaysia’s push to develop biogas facilities at palm oil mills to capture methane, which contributes to GHG reductions.
-
-The Land Use, Land-Use Change, and Forestry (LULUCF) sector is critical for maintaining Malaysia’s carbon sink status. Policies promote sustainable forest management, ensuring that at least 50% of the country’s land remains forested, as highlighted in the REDD+ Strategy.
-
-Finally, the chapter explores various GHG emissions projections under three scenarios: Business-as-Usual (BAU), Planning (PLAN), and Ambitious (AMB). The analysis shows that without further intervention, emissions are expected to increase, particularly from the energy sector, which will account for the majority of emissions by 2030. However, with planned and more ambitious measures, Malaysia can significantly reduce its GHG emissions by implementing aggressive energy efficiency programs and transitioning toward renewable energy.
-
-This chapter provides a comprehensive overview of Malaysia’s policy framework, sectoral actions, and projections aimed at achieving its climate goals under the Paris Agreement and ensuring sustainable development.
-''')
-
-ex1 = st.expander("Prompt")
-ex1.write('''Provide a detailed summarization by comparing the following two texts. Don't just summarize one, then the other. Make sure to include nuance that the two texts present and details that would be relevant for a reader to fully comprehend and understand their material. You shouldn't have to acknowledge the texts directly.''')
-
-st.subheader("Thailand vs. Malaysia")
-st.write('''Both Thailand and Malaysia have developed robust frameworks to mitigate climate change, though their approaches reflect their unique national circumstances, priorities, and resources. Both countries have mainstreamed climate change mitigation into their national development strategies and emphasized the importance of aligning climate action with economic growth, resource efficiency, and sustainability goals.
+if pair == "Thailand BUR4 vs. Malaysia BU2":
+    left_label = "Thailand BUR4"
+    right_label = "Malaysia BU2"
+    left_summary = '''Chapter 3 of Thailand’s Fourth Biennial Update Report provides a comprehensive overview of the country’s climate change mitigation efforts, emphasizing the integration of mitigation strategies into national and sectoral policies. The chapter focuses on the implementation of various frameworks and targets aimed at reducing greenhouse gas (GHG) emissions. Thailand’s commitment to addressing climate change is underscored by its Nationally Appropriate Mitigation Action (NAMA) and Nationally Determined Contribution (NDC) targets.
+                Key national plans include the 20-Year National Strategy, the Climate Change Master Plan (2015–2050), and sectoral strategies covering energy, transportation, industry, and waste management. The 20-Year National Strategy aims to achieve eco-friendly development, balancing economic, environmental, and social factors. It integrates climate action into sustainable development goals, recognizing the increasing impacts of climate change on the environment and society.
+                The NAMA, implemented between 2013 and 2020, achieved significant GHG reductions, especially in the energy and transport sectors. By 2020, Thailand had reduced emissions by 15.4% from the business-as-usual scenario, with renewable energy contributing the bulk of the reductions. The transition to the NDC framework represents Thailand’s second phase of climate action, targeting a 20-25% reduction by 2030, with a more ambitious long-term goal of achieving carbon neutrality by 2050 and net-zero emissions by 2065.
+                Thailand’s mitigation measures are diverse, spanning renewable energy promotion, energy efficiency improvements, waste management, and agricultural reforms. The report highlights the importance of technology transfer, capacity building, and international cooperation in enabling Thailand to meet its climate goals. Specific projects, such as the RAC NAMA (Refrigeration and Air Conditioning Nationally Appropriate Mitigation Action) and Thai Rice NAMA, exemplify targeted initiatives that combine policy, technology, and financial mechanisms to achieve emission reductions in key sectors.
+                Overall, the report illustrates Thailand’s proactive stance in climate mitigation, noting the challenges posed by limited financial and technical resources. It emphasizes the need for ongoing international support to reach the more ambitious targets outlined in the updated NDC and the Long-Term Low Greenhouse Gas Emission Development Strategy (LT-LEDS).'''
+    
+    right_summary = '''Chapter 3 of Malaysia’s Biennial Update Report highlights the country’s ongoing mitigation efforts to address climate change. The chapter begins by discussing how Malaysia has mainstreamed climate mitigation actions into its national development plans, particularly through the Eleventh Malaysia Plan (2016-2020), which emphasizes green growth and sustainability. It outlines key strategies aimed at climate-resilient development, resource efficiency, and sustainable energy usage.
+    The National Policy on Climate Change provides a framework guiding government agencies, industries, and communities toward a balanced approach to both mitigation and adaptation. This framework is based on five principles, including sustainable development, environmental conservation, and coordinated implementation of climate change actions. Additionally, the country has committed to reducing greenhouse gas (GHG) emissions intensity per GDP by 45% by 2030, based on 2005 levels.
+    Sectoral policies play a significant role in Malaysia’s mitigation strategy, covering energy, transport, waste management, and land-use sectors. For example, the National Renewable Energy Policy and Action Plan and the National Energy Efficiency Action Plan (NEEAP) set ambitious targets for renewable energy installation and energy efficiency improvements. In the transport sector, policies such as the National Automotive Policy and the National Electric Mobility Blueprint promote the use of electric vehicles (EVs) and biofuels, while aiming for a 40% modal share of public transport by 2030.
+    Waste management efforts are also prominent, with goals to increase recycling rates and reduce methane emissions from waste disposal sites. The chapter details Malaysia’s push to develop biogas facilities at palm oil mills to capture methane, which contributes to GHG reductions.
+    The Land Use, Land-Use Change, and Forestry (LULUCF) sector is critical for maintaining Malaysia’s carbon sink status. Policies promote sustainable forest management, ensuring that at least 50% of the country’s land remains forested, as highlighted in the REDD+ Strategy.
+    Finally, the chapter explores various GHG emissions projections under three scenarios: Business-as-Usual (BAU), Planning (PLAN), and Ambitious (AMB). The analysis shows that without further intervention, emissions are expected to increase, particularly from the energy sector, which will account for the majority of emissions by 2030. However, with planned and more ambitious measures, Malaysia can significantly reduce its GHG emissions by implementing aggressive energy efficiency programs and transitioning toward renewable energy.
+    This chapter provides a comprehensive overview of Malaysia’s policy framework, sectoral actions, and projections aimed at achieving its climate goals under the Paris Agreement and ensuring sustainable development.
+    '''
+    comp_sum = '''Both Thailand and Malaysia have developed robust frameworks to mitigate climate change, though their approaches reflect their unique national circumstances, priorities, and resources. Both countries have mainstreamed climate change mitigation into their national development strategies and emphasized the importance of aligning climate action with economic growth, resource efficiency, and sustainability goals.
 
 Thailand’s strategy is characterized by long-term planning and ambitious GHG emission reduction targets, highlighted by its 20-Year National Strategy (2018-2037) and the Climate Change Master Plan (2015-2050). These plans focus on reducing GHG emissions across key sectors, such as energy, transport, industry, and waste, while promoting low-carbon growth. Thailand’s targets include a 30-40% reduction of GHG emissions by 2030, conditional on international support for technology, finance, and capacity building . Thailand also aims for carbon neutrality by 2050 and net-zero emissions by 2065 . Thailand’s mitigation efforts incorporate both mandatory measures and voluntary actions, such as carbon market initiatives and carbon labeling schemes.
 
@@ -51,14 +40,31 @@ While both countries rely heavily on international cooperation for technological
 Sectorally, both countries target the energy and transport sectors as key areas for GHG reductions, promoting renewable energy and improving public transportation systems. However, Malaysia places a significant emphasis on its LULUCF (Land Use, Land-Use Change, and Forestry) sector, ensuring that 50% of the country’s land remains forested . This sector is critical for Malaysia’s carbon sink efforts, a feature less emphasized in Thailand’s mitigation plans.
 
 Ultimately, both countries recognize the need for aggressive mitigation actions aligned with sustainable development, yet they navigate this challenge differently based on their economic structures, environmental contexts, and available resources. Both Thailand and Malaysia emphasize the importance of sectoral policies, international cooperation, and long-term strategic planning, but the depth of ambition and the specific focus areas reflect their distinct national circumstances.
-''')
+'''
+
+elif pair == "Malaysia BUR2 vs. Malaysia BUR3":
+    left_label = "Malaysia BUR2"
+    right_label = "Malaysia BUR3"
+
+col1.subheader(left_label)
+col2.subheader(right_label)
+col1.write(left_summary)
+
+col2.write(right_summary)
+
+ex1 = st.expander("Prompt")
+ex1.write('''Provide a detailed summarization by comparing the following two texts. Don't just summarize one, then the other. Make sure to include nuance that the two texts present and details that would be relevant for a reader to fully comprehend and understand their material. You shouldn't have to acknowledge the texts directly.''')
+
+st.subheader(f"{left_label} vs. {right_label}")
+st.write(comp_sum)
 
 st.header("Generated Questions")
+q_type = st.selectbox("I want questions based on...", ["Summaries", "Original Texts"])
 qcol1, qcol2 = st.columns(2)
 qcol1.subheader("Thailand BUR4")
 qcol2.subheader("Malaysia BU2")
 
-thailand_qa = [
+thailand_sum_qa = [
     {
         "question": "1. How does Thailand’s 20-Year National Strategy integrate climate change mitigation into sustainable development, and what challenges might arise from balancing these different objectives?",
         "answer": """**Sample Answer**: Thailand’s 20-Year National Strategy aims to balance economic, environmental, and social factors while promoting eco-friendly development. It integrates climate action by recognizing the increasing impacts of climate change on both the environment and society, thereby tying sustainable development goals with mitigation efforts. However, a challenge in balancing these objectives could arise from potential conflicts between economic growth and environmental conservation, where pursuing rapid industrial growth may hinder sustainability goals.
@@ -71,7 +77,14 @@ thailand_qa = [
     },
 ]
 
-malaysia_qa = [
+thailand_og_qa = [
+    {
+        "question": "How has Thailand integrated climate change mitigation into its national policies, and what are the primary national plans guiding this effort? Discuss how these plans align with global climate change goals.",
+        "answer": '''*Sample Answer*: Thailand has incorporated climate change mitigation into its 20-Year National Strategy (2018-2037) and other key plans such as the Climate Change Master Plan (2015-2050), the Nationally Determined Contribution (NDC), and the Long-Term Low Greenhouse Gas Emission Development Strategy (LT-LEDS). These plans are aligned with global goals, such as those outlined in the Paris Agreement, by aiming for carbon neutrality by 2050 and net-zero GHG emissions by 2065. Thailand’s commitment to reducing GHG emissions by 30% from the BAU level by 2030 reflects these broader international efforts, and further reductions up to 40% are contingent on enhanced international support for technology, finance, and capacity-building.'''
+    },
+]
+
+malaysia_sum_qa = [
     {
         "question": "1. How does the Eleventh Malaysia Plan integrate climate change mitigation into national development, and what are the key strategies outlined for achieving green growth and sustainability?",
         "answer": """**Sample Answer**: The Eleventh Malaysia Plan integrates climate change mitigation by focusing on climate-resilient development, resource efficiency, and sustainable energy usage. Key strategies include promoting green growth, enhancing sustainability, and ensuring that economic development does not compromise environmental goals. The plan also emphasizes the need for climate adaptation measures alongside mitigation efforts, helping Malaysia pursue both environmental conservation and sustainable economic development.
@@ -79,13 +92,30 @@ malaysia_qa = [
     }
 ]
 
+malaysia_og_qa = [
+    {
+        "question": "How does Malaysia’s Eleventh Malaysia Plan (2016-2020) integrate climate change mitigation, and what are some specific strategies outlined in this plan? Discuss how these strategies address both development and environmental goals.",
+        "answer": '''Sample Answer:
+The Eleventh Malaysia Plan integrates climate change mitigation by focusing on “Pursuing Green Growth for Sustainability and Resilience.” It includes strategies such as the promotion of climate-resilient development, sustainable use of natural resources, efficient public transportation, and sustainable energy usage. The goal is to balance development with environmental sustainability, emphasizing prudent resource management and the reduction of greenhouse gas (GHG) emissions. These strategies are designed to fulfill the country’s development needs while contributing to global efforts to combat climate change.
+'''
+    }
+]
+
 with qcol1:
-    for qa in thailand_qa:
+    if q_type == "Summaries":
+        col1_qa = thailand_sum_qa
+    elif q_type == "Original Texts":
+        col1_qa = thailand_og_qa
+    for qa in col1_qa:
         qex = st.expander(qa["question"])
         qex.write(qa["answer"])
 
 with qcol2:
-    for qa in malaysia_qa:
+    if q_type == "Summaries":
+        col2_qa = malaysia_sum_qa
+    elif q_type == "Original Texts":
+        col2_qa = malaysia_og_qa
+    for qa in col2_qa:
         qex = st.expander(qa["question"])
         qex.write(qa["answer"])
 
