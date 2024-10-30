@@ -91,12 +91,43 @@ thailand_sum_qa = [
         "answer": """**Sample Answer**: The NAMA, implemented from 2013 to 2020, focused on significant reductions in greenhouse gas emissions, particularly in the energy and transport sectors, achieving a 15.4% reduction by 2020. The NDC, however, represents Thailand’s second phase of climate action, targeting more ambitious goals such as a 20-25% reduction in emissions by 2030 and achieving carbon neutrality by 2050. The transition is important because it signals a shift toward longer-term, more aggressive climate goals, reflecting Thailand’s increased commitment to addressing climate change.
         \n**Where in the text**: The third paragraph provides the details of the NAMA and NDC and explains the transition from one to the other."""
     },
+    {
+        "question": '''3. Discuss the role of international cooperation in Thailand’s mitigation efforts, particularly regarding technology transfer and financial resources. Why are these components critical for Thailand’s climate goals?''',
+        "answer": '''**Sample Answer**: International cooperation is essential for Thailand’s mitigation efforts, particularly in the areas of technology transfer and financial resources. The report highlights that these components are critical because Thailand faces limited financial and technical resources, which could hinder its ability to meet its ambitious climate targets. Technology transfer allows Thailand to adopt more efficient and sustainable methods for energy production and waste management, while financial support helps overcome the economic barriers to implementing large-scale renewable energy projects.
+        \n**Where in the text**: This answer can be derived from the fifth paragraph, where the importance of international cooperation, technology transfer, and financial resources is emphasized.'''
+    },
+    {
+        "question": '''4. How did Thailand’s renewable energy initiatives contribute to the success of its NAMA targets, and what are the long-term goals under the NDC framework regarding renewable energy?''',
+        "answer": '''**Sample Answer**: Renewable energy played a significant role in helping Thailand achieve its NAMA target, contributing to the 15.4% reduction in emissions by 2020. Renewable energy sources, especially in the energy and transport sectors, were key to reducing emissions from the business-as-usual scenario. Under the NDC framework, Thailand has set more ambitious long-term goals, including a 20-25% reduction in emissions by 2030, and eventually reaching carbon neutrality by 2050, with renewable energy continuing to play a central role.
+        \n**Where in the text**: The third and fourth paragraphs discuss the achievements of NAMA and the targets under the NDC framework, including the contributions of renewable energy.'''
+    },
+    {
+        "question": '''5. What specific mitigation projects are highlighted in the report, and how do they exemplify the combination of policy, technology, and financial mechanisms to achieve emission reductions?''',
+        "answer": '''**Sample Answer**: The report highlights specific projects like the RAC NAMA (Refrigeration and Air Conditioning Nationally Appropriate Mitigation Action) and the Thai Rice NAMA, which demonstrate how Thailand is integrating policy, technology, and financial mechanisms to reduce emissions. For example, these projects combine regulatory support with technological innovations, such as improving energy efficiency in the refrigeration sector or reducing methane emissions from rice farming. Financial mechanisms, like funding from international climate funds or partnerships, help support the implementation of these initiatives.
+        \n**Where in the text**: The fourth paragraph mentions these specific mitigation projects and their importance in combining various mechanisms to achieve emission reductions.'''
+    },
 ]
 
 thailand_og_qa = [
     {
         "question": "How has Thailand integrated climate change mitigation into its national policies, and what are the primary national plans guiding this effort? Discuss how these plans align with global climate change goals.",
         "answer": '''*Sample Answer*: Thailand has incorporated climate change mitigation into its 20-Year National Strategy (2018-2037) and other key plans such as the Climate Change Master Plan (2015-2050), the Nationally Determined Contribution (NDC), and the Long-Term Low Greenhouse Gas Emission Development Strategy (LT-LEDS). These plans are aligned with global goals, such as those outlined in the Paris Agreement, by aiming for carbon neutrality by 2050 and net-zero GHG emissions by 2065. Thailand’s commitment to reducing GHG emissions by 30% from the BAU level by 2030 reflects these broader international efforts, and further reductions up to 40% are contingent on enhanced international support for technology, finance, and capacity-building.'''
+    },
+    {
+        "question": '''Analyze the strategies within Thailand’s 20-Year National Strategy that focus on balancing economic growth with environmental sustainability. How do these strategies aim to mitigate the impacts of climate change?''',
+        "answer": '''*Sample Answer*: The 20-Year National Strategy emphasizes “Eco-Friendly Development and Growth,” which includes strategies to preserve and restore natural resources, balance economic development with ecosystem capacity, and ensure public participation in environmental governance. Key mitigation measures include reducing GHG emissions through promoting a low-carbon society, supporting agricultural management, and expanding forest areas for carbon sequestration. These strategies aim to mitigate climate change by fostering sustainable use of natural resources while maintaining economic growth, which is essential for long-term sustainability.'''
+    },
+    {
+        "question": '''Describe the significance of Thailand’s NAMA (Nationally Appropriate Mitigation Action) achievements and how they laid the foundation for future climate mitigation actions, including the transition to the NDC framework.''',
+        "answer": '''*Sample Answer*: Thailand’s NAMA achieved significant GHG reductions, particularly in the energy and transport sectors, reducing emissions by 15.4% from the BAU level by 2020. The success of these measures, such as renewable energy substitution and energy efficiency improvements, provided the groundwork for transitioning to the more ambitious NDC framework. NAMA’s focus on creating a robust MRV (Measurement, Reporting, and Verification) system for tracking emissions reductions was critical in setting the stage for Thailand’s future commitments under the NDC, including a target to reduce GHG emissions by 20-25% by 2030.'''
+    },
+    {
+        "question": '''Discuss the role of public-private partnerships in Thailand’s mitigation strategies, especially in sectors like waste management and renewable energy. How do these partnerships contribute to achieving GHG reduction goals?''',
+        "answer": '''*Sample Answer*: Public-private partnerships play a pivotal role in Thailand’s waste management and renewable energy sectors by encouraging investment in GHG reduction technologies and infrastructure. For example, Thailand’s Waste Sector Action Plan emphasizes the involvement of the private sector in initiatives like waste-to-energy projects and methane recovery from industrial wastewater. Additionally, in the renewable energy sector, partnerships between government agencies and private power producers facilitate the development of renewable energy sources. These collaborations help to distribute the financial burden, foster innovation, and drive progress toward Thailand’s goal of reducing GHG emissions by 40% by 2030.'''
+    },
+    {
+        "question": '''Evaluate the challenges Thailand faces in achieving its updated NDC targets. What external factors might influence the country’s ability to meet these goals, and how is Thailand addressing these potential barriers?''',
+        "answer": '''*Sample Answer*: Thailand’s ability to meet its updated NDC targets, including a 30-40% reduction in GHG emissions by 2030, depends heavily on international support in the form of technology transfer, financial resources, and capacity-building. Key challenges include limited access to advanced technologies, the high cost of transitioning to renewable energy, and the need for robust systems to track and verify emissions reductions. Thailand is addressing these barriers by setting up an MRV system for various sectors, such as energy and waste management, and seeking international cooperation, as highlighted during COP26. However, sustained global financial and technical support remains crucial for Thailand to achieve its long-term goals of carbon neutrality and net-zero emissions by 2065. These questions encourage college students to engage critically with the text, considering both the details and broader implications of Thailand’s climate policies.'''
     },
 ]
 
@@ -105,25 +136,61 @@ malaysia2_sum_qa = [
         "question": "1. How does the Eleventh Malaysia Plan integrate climate change mitigation into national development, and what are the key strategies outlined for achieving green growth and sustainability?",
         "answer": """**Sample Answer**: The Eleventh Malaysia Plan integrates climate change mitigation by focusing on climate-resilient development, resource efficiency, and sustainable energy usage. Key strategies include promoting green growth, enhancing sustainability, and ensuring that economic development does not compromise environmental goals. The plan also emphasizes the need for climate adaptation measures alongside mitigation efforts, helping Malaysia pursue both environmental conservation and sustainable economic development.
         \n**Where in the text**: This answer can be derived from the first paragraph, where the role of the Eleventh Malaysia Plan and its focus on green growth and sustainability are discussed."""
-    }
+    },
+    {
+        "question": '''What are the five principles guiding Malaysia’s National Policy on Climate Change, and how do these principles contribute to balancing mitigation and adaptation strategies?''',
+        "answer": '''**Sample Answer**: The five principles guiding Malaysia’s National Policy on Climate Change are sustainable development, environmental conservation, coordinated implementation of climate actions, effective participation from stakeholders, and recognition of differentiated responsibilities. These principles contribute to balancing mitigation and adaptation strategies by ensuring that climate actions are integrated into national development while also promoting environmental conservation and collaboration across different sectors and levels of society.
+        \n**Where in the text**: The second paragraph outlines the five principles of the National Policy on Climate Change and explains their role in guiding mitigation and adaptation efforts.''' 
+    },
+    {
+        "question": '''Discuss how Malaysia’s sectoral policies in energy, transport, and waste management contribute to the country’s climate mitigation strategy. How do these policies aim to reduce GHG emissions?''',
+        "answer": '''**Sample Answer**: Malaysia’s sectoral policies in energy, transport, and waste management play crucial roles in the country’s climate mitigation strategy. The National Renewable Energy Policy and the National Energy Efficiency Action Plan aim to increase renewable energy installation and improve energy efficiency. In the transport sector, the National Automotive Policy and the National Electric Mobility Blueprint encourage the adoption of electric vehicles (EVs) and biofuels, while targeting a 40% modal share of public transport by 2030. Waste management policies focus on increasing recycling rates and reducing methane emissions, particularly through the development of biogas facilities at palm oil mills to capture methane emissions.
+        \n**Where in the text**: The third and fourth paragraphs discuss the sectoral policies in energy, transport, and waste management and their contributions to reducing GHG emissions.'''
+    },
+    {
+        "question": '''How does the Land Use, Land-Use Change, and Forestry (LULUCF) sector contribute to Malaysia’s climate mitigation efforts, and what policies ensure the protection of Malaysia’s carbon sinks?''',
+        "answer": '''**Sample Answer**: The LULUCF sector is vital for maintaining Malaysia’s carbon sink status, which helps offset emissions from other sectors. Policies promoting sustainable forest management, as outlined in the REDD+ Strategy, aim to ensure that at least 50% of Malaysia’s land remains forested. This helps preserve the country’s natural carbon sinks and contributes to its overall GHG emissions reduction efforts by absorbing more carbon dioxide from the atmosphere.
+        \n**Where in the text**: The fifth paragraph explains the role of the LULUCF sector and the policies ensuring sustainable forest management to maintain carbon sinks.'''
+    },
+    {
+        "question": '''What do the three GHG emissions projection scenarios (BAU, PLAN, and AMB) reveal about Malaysia’s future emissions, and how do these scenarios inform the country’s climate strategy?''',
+        "answer": '''**Sample Answer**: The three projection scenarios—Business-as-Usual (BAU), Planning (PLAN), and Ambitious (AMB)—highlight the potential future paths for Malaysia’s GHG emissions. Under the BAU scenario, emissions are expected to rise significantly, particularly from the energy sector, which will account for the majority of emissions by 2030. The PLAN scenario, which includes current policies and planned initiatives, shows a moderate reduction in emissions. The AMB scenario demonstrates the most substantial reductions, relying on aggressive energy efficiency programs and a transition to renewable energy. These scenarios inform Malaysia’s climate strategy by showing the importance of implementing more ambitious measures to meet its climate goals.
+        \n**Where in the text**: The final paragraph outlines the different scenarios and their implications for Malaysia’s future emissions and climate strategy.'''
+    },
 ]
 
 malaysia2_og_qa = [
     {
         "question": "How does Malaysia’s Eleventh Malaysia Plan (2016-2020) integrate climate change mitigation, and what are some specific strategies outlined in this plan? Discuss how these strategies address both development and environmental goals.",
-        "answer": '''Sample Answer:
-The Eleventh Malaysia Plan integrates climate change mitigation by focusing on “Pursuing Green Growth for Sustainability and Resilience.” It includes strategies such as the promotion of climate-resilient development, sustainable use of natural resources, efficient public transportation, and sustainable energy usage. The goal is to balance development with environmental sustainability, emphasizing prudent resource management and the reduction of greenhouse gas (GHG) emissions. These strategies are designed to fulfill the country’s development needs while contributing to global efforts to combat climate change.
-'''
-    }
+        "answer": '''*Sample Answer*: The Eleventh Malaysia Plan integrates climate change mitigation by focusing on “Pursuing Green Growth for Sustainability and Resilience.” It includes strategies such as the promotion of climate-resilient development, sustainable use of natural resources, efficient public transportation, and sustainable energy usage. The goal is to balance development with environmental sustainability, emphasizing prudent resource management and the reduction of greenhouse gas (GHG) emissions. These strategies are designed to fulfill the country’s development needs while contributing to global efforts to combat climate change.'''
+    },
+    {
+        "question": '''Analyze the role of Malaysia’s National Policy on Climate Change, approved in 2009, in guiding the country’s mitigation actions. How does this policy ensure a balanced approach between economic development and environmental conservation?''',
+        "answer": '''*Sample Answer*: The National Policy on Climate Change serves as the foundation for guiding government agencies, industries, and communities in addressing climate change in a holistic manner. It emphasizes integrating climate change responses into national development plans and ensuring that both mitigation and adaptation efforts are balanced. The policy’s five principles focus on sustainable development, environmental conservation, coordinated implementation, and stakeholder participation. This approach ensures that economic growth is not pursued at the expense of environmental degradation, fostering a balanced and long-term sustainable path for Malaysia.'''
+    },
+    {
+        "question": '''Evaluate the effectiveness of Malaysia’s sectoral policies in reducing GHG emissions in key sectors such as energy, transport, and waste. What are some of the major mitigation actions and their expected outcomes?''',
+        "answer": '''*Sample Answer*: Malaysia’s sectoral policies target key sectors like energy, transport, and waste, with specific mitigation actions designed to reduce GHG emissions. For example, in the energy sector, policies like the National Renewable Energy Policy and Action Plan aim to increase the use of renewable energy, with targets of achieving 3,484 MW of renewable energy installations by 2030. In the transport sector, policies promote energy-efficient vehicles and public transportation, with a goal of 40% public transport modal share by 2030. In the waste sector, methane recovery and waste recycling initiatives are expected to redirect 40% of waste from landfills by 2020. These actions, if fully implemented, are projected to significantly reduce GHG emissions across these sectors.'''
+    },
+    {
+        "question": '''Discuss the challenges Malaysia faces in achieving its GHG reduction targets under the Nationally Determined Contribution (NDC). What external factors may influence the country’s ability to meet these goals?''',
+        "answer": '''*Sample Answer*: Malaysia has committed to reducing its GHG emissions intensity by 45% by 2030 under its NDC, with 35% unconditional reduction and an additional 10% contingent on international support. Challenges in meeting these targets include the financial and technological limitations in implementing high-efficiency technologies, as well as the need for capacity building. Malaysia’s success in achieving the NDC targets depends heavily on international climate financing, technology transfer, and capacity-building from developed countries. Without these external supports, it may be difficult for Malaysia to fully implement its ambitious mitigation plans.'''
+    },
+    {
+        "question": '''How does the Long-range Energy Alternatives Planning (LEAP) simulation software contribute to Malaysia’s GHG emission projections? Describe the different scenarios explored and their implications for Malaysia’s energy sector.''',
+        "answer": '''*Sample Answer*: The LEAP simulation software helps estimate Malaysia’s energy demand and GHG emissions by modeling different policy scenarios: Business-as-usual (BAU), Planning (PLAN), and Ambitious (AMB). The BAU scenario projects emissions growth based on current trends without additional policy interventions. The PLAN scenario incorporates existing and planned initiatives, while the AMB scenario explores the impact of more aggressive mitigation measures. The results show that under the BAU scenario, energy demand is expected to grow significantly, but under the PLAN and AMB scenarios, energy efficiency programs could reduce overall demand, highlighting the importance of policy interventions in achieving Malaysia’s climate goals. These questions and answers encourage students to think critically about Malaysia’s climate strategies, integrating both specific details and broader implications.'''
+    },
 ]
 
 malaysia3_sum_qa = [
     {
         "question": '''1. How did Malaysia’s renewable energy initiatives contribute to GHG emissions reductions in 2016, and what role did the National Renewable Energy Policy and Feed-in-Tariff (FiT) mechanism play?''',
         "answer": '''**Sample Answer**: Malaysia’s renewable energy initiatives were instrumental in achieving GHG emissions avoidance of 7,262.59 Gg CO2 eq in 2016. The National Renewable Energy Policy and the Feed-in-Tariff (FiT) mechanism specifically supported the deployment of renewable energy technologies, particularly hydropower, which alone contributed 6,570.15 Gg CO2 eq to the total reduction. The FiT provided incentives that encouraged the adoption of renewable energy sources, making it a key driver of emissions reductions in the energy sector.
-            \nWhere in the text: The paragraph discussing “Key mitigation actions in the energy sector” and the specific contribution of renewable energy efforts.
-'''
-    }
+        \nWhere in the text: The paragraph discussing “Key mitigation actions in the energy sector” and the specific contribution of renewable energy efforts.'''
+    },
+    {
+        
+    },
 ]
 
 malaysia3_og_qa = [
